@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/temp_time_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/day_background_text"
+        android:textSize="13sp"
+        android:text="12:00 AM"
+        android:layout_margin="5dp"
+        android:padding="7dp"
+        />
+    <com.github.pwittchen.weathericonview.WeatherIconView
+        android:id="@+id/icon_daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        custom:weatherIconResource="@string/wi_day_rain"
+        custom:weatherIconColor="@android:color/white"
+        custom:weatherIconSize="40"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        >
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/umbrella"
+            android:layout_marginEnd="5dp"
+            />
+        <TextView
+            android:id="@+id/temp_chance_rain_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="10sp"
+            android:text="0%"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/temp_max_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:text="13°"
+            android:layout_margin="5dp"
+            />
+
+        <View
+            android:id="@+id/bar_temp_daily"
+            android:layout_width="20dp"
+            android:layout_height="80dp"
+            android:background="@drawable/background_bar_temp_daily"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/temp_min_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:text="13°"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
